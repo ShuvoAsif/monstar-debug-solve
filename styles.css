@@ -193,3 +193,38 @@ button {
     flex-direction: column;
   }
 }
+
+
+
+/* --------media quoeries medium device ---------*/
+@media screen and (min-width: 701px) and (max-width: 992px) {
+
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+/* --------media quoeries large device ---------*/
+
+@media only screen and (min-width: 1024px) {
+
+  .box-container {
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+}
