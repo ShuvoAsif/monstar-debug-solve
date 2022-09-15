@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="my-5 text-center  text-primary fw-bold">Blog</h1>
+    </header>
+    <main class="mx-5 my-5">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col card text-center my-3">
+                <div class="card-body">
+                    <h5 class="card-title">Difference between local storage and session storage</h5>
+
+                    <!-- modal button -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Read This Blog
+                    </button>
+                    <!----- Modal ----->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Difference between local storage
+                                        and
+                                        session storage</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Local Storage:</h3>
+                                    <p> This read-only interface property provides access to the
+                                        Document’s local storage object, the stored data is stored across browser
+                                        sessions. Similar to sessionStorage, except that localStorage data gets
+                                        cleared
+                                        when the page session ends that is when the page is closed. It is cleared
+                                        when
+                                        the last “private” tab of a browser is closed (localStorage data for a
+                                        document
+                                        loaded in a private browsing or incognito session).</p>
+                                    <h3>Session Storage:</h3>
+                                    <p> Session Storage objects can be accessed using the
+                                        sessionStorage read-only property. The difference between sessionStorage and
+                                        localStorage is that localStorage data does not expire, whereas
+                                        sessionStorage
+                                        data is cleared when the page session ends.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col card text-center my-3">
+                <div class="card-body">
+                    <h5 class="card-title">Difference between global local scope and block scope</h5>
+
+                    <!-- modal button -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+                        Read This Blog
+                    </button>
+                    <!----- Modal ----->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Difference between global local
+                                        scope
+                                        and block scope</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Global Scope</h5>
+                                    <p>A variable exists inside or outside a block. If a variable is declared
+                                        outside
+                                        all functions or curly braces ({}), it exists in the global scope. The
+                                        global
+                                        variables can be accessed by any line of code in the program, including
+                                        inside
+                                        blocks.</p>
+                                    <h5>Block Scope</h5>
+                                    <p>So far, we’ve seen variables defined with the var keyword. Var can declare a
+                                        variable either in the global or local scope. The variables that are
+                                        declared
+                                        within the block scope are comparable to local ones. They are available
+                                        within
+                                        the block that they are defined.
+
+                                        The main difference between the local scope and block scope is that the
+                                        block
+                                        statements (e.g. if conditions or for loops), don't create a new scope. So
+                                        the
+                                        var keyword will not have an effect, because the variables are still in the
+                                        same
+                                        scope.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col card text-center my-3">
+                <div class="card-body">
+                    <h5 class="card-title">How does js event loop work?</h5>
+                    <!-- modal button -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        Read This Blog
+                    </button>
+                    <!----- Modal ----->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">How does js event loop work?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The Event Loop has one simple job — to monitor the Call Stack and the
+                                        Callback
+                                        Queue. If the Call Stack is empty, the Event Loop will take the first event
+                                        from
+                                        the queue and will push it to the Call Stack, which effectively runs it.
+                                        Such an
+                                        iteration is called a tick in the Event Loop.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col card text-center my-3">
+                <div class="card-body">
+                    <h5 class="card-title">How we get undefined?</h5>
+                    <!-- modal button -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">
+                        Read More
+                    </button>
+                    <!----- Modal ----->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">How we get undefined?</h5>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>object. That is, it is a variable in global scope. The initial value of undefined
+                                        is the primitive value undefined.
+
+                                        In all non-legacy browsers, undefined is a non-configurable, non-writable
+                                        property. (Even when this is not the case, avoid overriding it.)
+
+                                        A variable that has not been assigned a value is of type undefined. A method or
+                                        statement also returns undefined if the variable that is being evaluated does
+                                        not have an assigned value. A function returns undefined if a value was not
+                                        returned. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
